@@ -27,6 +27,17 @@
                 "minikube": {}
             },
             "watch": true
+        },
+        {
+            "name": "Docker Node.js Launch",
+            "type": "docker",
+            "request": "launch",
+            "preLaunchTask": "docker-run: debug",
+            "platform": "node",
+            "node": {
+                "package": "${workspaceFolder}/node_modules/@aashutoshrathi/word-wrap/package.json",
+                "localRoot": "${workspaceFolder}/node_modules/@aashutoshrathi/word-wrap"
+            }
         }
     ]
 }
