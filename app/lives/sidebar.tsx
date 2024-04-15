@@ -28,10 +28,10 @@ export const DashboardSidebar: FC = function () {
     >
       <Sidebar.Items>
         <Sidebar.ItemGroup>
-          <Sidebar.Item href="#" icon={HiChartPie}>
+          <Sidebar.Item href="../#" icon={HiChartPie}>
             Dashboard
           </Sidebar.Item>
-          <Sidebar.Item href="/lives/#" icon={HiUser}>
+          <Sidebar.Item href="#" icon={HiUser}>
             Lives
           </Sidebar.Item>
           <Sidebar.Item href="#" icon={HiShoppingBag}>

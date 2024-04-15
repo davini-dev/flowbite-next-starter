@@ -67,209 +67,24 @@ export const HomePageContent: NextPage = function () {
       <section>
         <header>
           <h1 className="mb-6 text-5xl font-extrabold dark:text-white">
-            Welcome to <code>Flowbite</code> on <code>Next.js</code>!
+             Seja bem vindo ao <code>Curtik.Top</code>!
           </h1>
         </header>
       </section>
       <section>
         <header>
-          <h2 className="mb-3 text-4xl font-bold dark:text-gray-200">Alert</h2>
-        </header>
-        <AlertsExample />
-      </section>
-      <section>
-        <header>
           <h2 className="mb-3 mt-9 text-4xl font-bold dark:text-gray-200">
-            Accordion
+            Explicando:
           </h2>
         </header>
         <AccordionExample />
       </section>
       <section>
-        <header>
-          <h2 className="mb-3 mt-9 text-4xl font-bold dark:text-gray-200">
-            Avatar
-          </h2>
-        </header>
-        <AvatarExample />
-      </section>
-      <section>
-        <header>
-          <h2 className="mb-3 mt-9 text-4xl font-bold dark:text-gray-200">
-            Badges
-          </h2>
-        </header>
-        <BadgesExample />
-      </section>
-      <section>
-        <header>
-          <h2 className="mb-3 mt-9 text-4xl font-bold dark:text-gray-200">
-            Breadcrumb
-          </h2>
-        </header>
-        <BreadcrumbExample />
-      </section>
-      <section>
-        <header>
-          <h2 className="mb-3 mt-9 text-4xl font-bold dark:text-gray-200">
-            Buttons
-          </h2>
-        </header>
-        <ButtonsExample />
-      </section>
-      <section>
-        <header>
-          <h2 className="mb-3 mt-9 text-4xl font-bold dark:text-gray-200">
-            Button group
-          </h2>
-        </header>
-        <ButtonGroupExample />
-      </section>
-      <section>
-        <header>
-          <h2 className="mb-3 mt-9 text-4xl font-bold dark:text-gray-200">
-            Card
-          </h2>
-        </header>
+        <br></br>
         <CardExample />
       </section>
       <section>
-        <header>
-          <h2 className="mb-3 mt-9 text-4xl font-bold dark:text-gray-200">
-            Carousel
-          </h2>
-        </header>
-        <CarouselExample />
-      </section>
-      <section>
-        <header>
-          <h2 className="mb-3 mt-9 text-4xl font-bold dark:text-gray-200">
-            Dropdown
-          </h2>
-        </header>
-        <DropdownExample />
-      </section>
-      <section>
-        <header>
-          <h2 className="mb-3 mt-9 text-4xl font-bold dark:text-gray-200">
-            Forms
-          </h2>
-        </header>
-        <FormsExample />
-      </section>
-      <section>
-        <header>
-          <h2 className="mb-3 mt-9 text-4xl font-bold dark:text-gray-200">
-            Footer
-          </h2>
-        </header>
         <FooterExample />
-      </section>
-      <section>
-        <header>
-          <h2 className="mb-3 mt-9 text-4xl font-bold dark:text-gray-200">
-            List group
-          </h2>
-        </header>
-        <ListGroupExample />
-      </section>
-      <section>
-        <header>
-          <h2 className="mb-3 mt-9 text-4xl font-bold dark:text-gray-200">
-            Modal
-          </h2>
-        </header>
-        <ModalExample />
-      </section>
-      <section>
-        <header>
-          <h2 className="mb-3 mt-9 text-4xl font-bold dark:text-gray-200">
-            Navbars
-          </h2>
-        </header>
-        <NavbarsExample />
-      </section>
-      <section>
-        <header>
-          <h2 className="mb-3 mt-9 text-4xl font-bold dark:text-gray-200">
-            Pagination
-          </h2>
-        </header>
-        <PaginationExample />
-      </section>
-      <section>
-        <header>
-          <h2 className="mb-3 mt-9 text-4xl font-bold dark:text-gray-200">
-            Progress
-          </h2>
-        </header>
-        <ProgressExample />
-      </section>
-      <section>
-        <header>
-          <h2 className="mb-3 mt-9 text-4xl font-bold dark:text-gray-200">
-            Rating
-          </h2>
-        </header>
-        <RatingExample />
-      </section>
-      <section>
-        <header>
-          <h2 className="mb-3 mt-9 text-4xl font-bold dark:text-gray-200">
-            Sidebar
-          </h2>
-        </header>
-        <SidebarExample />
-      </section>
-      <section>
-        <header>
-          <h2 className="mb-3 mt-9 text-4xl font-bold dark:text-gray-200">
-            Spinners
-          </h2>
-        </header>
-        <SpinnersExample />
-      </section>
-      <section>
-        <header>
-          <h2 className="mb-3 mt-9 text-4xl font-bold dark:text-gray-200">
-            Tables
-          </h2>
-        </header>
-        <div className="max-w-full overflow-x-scroll">
-          <TablesExample />
-        </div>
-      </section>
-      <section>
-        <header>
-          <h2 className="mb-3 mt-9 text-4xl font-bold dark:text-gray-200">
-            Tabs
-          </h2>
-        </header>
-        <TabsExample />
-      </section>
-      <section>
-        <header>
-          <h2 className="mb-3 mt-9 text-4xl font-bold dark:text-gray-200">
-            Timeline
-          </h2>
-        </header>
-        <TimelineExample />
-      </section>
-      <section>
-        <header>
-          <h2 className="mb-3 mt-9 text-4xl font-bold dark:text-gray-200">
-            Toast
-          </h2>
-        </header>
-        <ToastExample />
-      </section>
-      <section>
-        <header>
-          <h2 className="mb-3 mt-9 text-4xl font-bold dark:text-gray-200">
-            Tooltips
-          </h2>
-        </header>
-        <TooltipsExample />
       </section>
     </div>
   );
@@ -279,7 +94,7 @@ const AccordionExample: FC = function () {
   return (
     <Accordion flush>
       <Accordion.Panel>
-        <Accordion.Title>What is Flowbite?</Accordion.Title>
+        <Accordion.Title>O que é Curtik.Top ?</Accordion.Title>
         <Accordion.Content>
           <p className="mb-2 text-gray-500 dark:text-gray-400">
             Flowbite is an open-source library of interactive components built
