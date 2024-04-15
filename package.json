@@ -24,8 +24,10 @@
     "npm": ">= 8"
   },
   "dependencies": {
+    "@auth0/nextjs-auth0": "^3.5.0",
     "flowbite": "^2.2.0",
     "flowbite-react": "^0.7.0",
+    "gn-api-sdk-typescript": "^2.0.1",
     "next": "^14.0.3",
     "react": "18",
     "react-dom": "18",
