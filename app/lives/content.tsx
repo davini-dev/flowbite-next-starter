@@ -1,37 +1,18 @@
 "use client";
 
 import {
-  Accordion,
-  Alert,
-  Avatar,
-  Badge,
-  Breadcrumb,
   Button,
   Card,
-  Carousel,
   Checkbox,
-  Dropdown,
   Footer,
   Label,
   ListGroup,
   Modal,
-  Navbar,
-  Pagination,
-  Progress,
-  Rating,
-  Sidebar,
-  Spinner,
-  Table,
-  Tabs,
   TextInput,
-  Timeline,
-  Toast,
-  Tooltip,
 } from "flowbite-react";
 import type { NextPage } from "next";
-import Image from "next/image";
 import type { FC } from "react";
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   BsDribbble,
   BsFacebook,
@@ -40,25 +21,10 @@ import {
   BsTwitter,
 } from "react-icons/bs";
 import {
-  HiAdjustments,
-  HiArrowNarrowRight,
-  HiArrowSmRight,
-  HiChartPie,
-  HiCheck,
-  HiClipboardList,
   HiCloudDownload,
-  HiDatabase,
-  HiExclamation,
-  HiEye,
-  HiHome,
   HiInbox,
   HiOutlineAdjustments,
-  HiShoppingBag,
-  HiTable,
-  HiUser,
   HiUserCircle,
-  HiViewBoards,
-  HiX,
 } from "react-icons/hi";
 
 export const HomePageContent: NextPage = function () {
@@ -80,7 +46,6 @@ export const HomePageContent: NextPage = function () {
     </div>
   );
 };
-
 
 const CardExample: FC = function () {
   return (
@@ -232,5 +197,3 @@ const ModalExample: FC = function () {
     </>
   );
 };
-
-

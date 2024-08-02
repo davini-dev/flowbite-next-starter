@@ -67,7 +67,7 @@ export const HomePageContent: NextPage = function () {
       <section>
         <header>
           <h1 className="mb-6 text-5xl font-extrabold dark:text-white">
-             Seja bem vindo ao <code>Curtik.Top</code>!
+            Seja bem vindo ao <code>Curtik.Top</code>!
           </h1>
         </header>
       </section>

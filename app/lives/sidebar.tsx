@@ -3,11 +3,8 @@ import { Sidebar } from "flowbite-react";
 import type { FC } from "react";
 import { BiBuoy } from "react-icons/bi";
 import {
-  HiArrowSmRight,
   HiChartPie,
-  HiInbox,
   HiShoppingBag,
-  HiTable,
   HiUser,
   HiViewBoards,
 } from "react-icons/hi";

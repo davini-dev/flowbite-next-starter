@@ -1,4 +1,5 @@
 {
+  
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/strict",
@@ -7,7 +8,8 @@
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:tailwindcss/recommended",
-    "plugin:@next/next/recommended"
+    "plugin:@next/next/recommended",
+    "next", "prettier"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -18,9 +20,10 @@
   },
   "root": true,
   "rules": {
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-page-custom-font": "off",
     "@typescript-eslint/consistent-type-imports": "error",
     "react/react-in-jsx-scope": "off",
-    "react/no-unescaped-entities": "off",
     "tailwindcss/classnames-order": [
       "error",
       {
