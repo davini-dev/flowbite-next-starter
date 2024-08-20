@@ -10,8 +10,9 @@ import {
     NavbarLink,
     NavbarToggle,
   } from "flowbite-react";
-  
-  export function Component() {
+
+  const TopNavBar = () => (
+    <>
     return (
       <Navbar fluid rounded>
         <NavbarBrand href="https://flowbite-react.com">
@@ -49,4 +50,6 @@ import {
         </NavbarCollapse>
       </Navbar>
     );
-  }
+    </>
+  )
+  export default TopNavBar
