@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import dynamic from 'next/dynamic'
+import MapboxExample from "../../components/MapboxExample";
 
 export const HomePageContent: NextPage = function () {
     return (
