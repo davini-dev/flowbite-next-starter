@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import dynamic from 'next/dynamic'
 
 
 export const HomePageContent: NextPage = function () {
