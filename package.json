@@ -34,11 +34,13 @@
     "flowbite": "^2.2.0",
     "flowbite-react": "^0.7.0",
     "gn-api-sdk-typescript": "^2.0.1",
+    "leaflet": "^1.9.4",
     "mapbox-gl": "^3.6.0",
     "next": "^14.0.3",
     "react": "18",
     "react-dom": "18",
     "react-icons": "^4.12.0",
+    "react-leaflet": "^4.2.1",
     "tailwind-merge": "^2.0.0"
   },
   "devDependencies": {
