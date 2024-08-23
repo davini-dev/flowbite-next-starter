@@ -92,11 +92,11 @@ export const DashboardNavbar: FC<Record<string, never>> = function () {
               </Navbar.Brand>
               <div className="flex md:order-2">
  
-        <NavbarToggle />
+        
 
       </div>
               </div>
-            <Button>Conectar</Button>
+            <Button>...</Button>
             
             <Dropdown
           arrowIcon={false}
