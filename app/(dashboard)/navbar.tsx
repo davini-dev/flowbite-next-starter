@@ -97,7 +97,7 @@ export const DashboardNavbar: FC<Record<string, never>> = function () {
       </div>
               </div>
             <Button>Conectar</Button>
-            <Ratingv />
+            
             <Dropdown
           arrowIcon={false}
           inline
@@ -108,6 +108,7 @@ export const DashboardNavbar: FC<Record<string, never>> = function () {
           <DropdownHeader>
             <span className="block text-sm">Marcelo Davini</span>
             <span className="block truncate text-sm font-medium">iotbrlabs@gmail.com</span>
+          <Ratingv />
           </DropdownHeader>
           <DropdownItem>Dashboard</DropdownItem>
           <DropdownItem>Configurações</DropdownItem>
