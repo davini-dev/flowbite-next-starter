@@ -1,5 +1,7 @@
 import type { NextPage } from "next";
 import dynamic from 'next/dynamic'
+import { ConnectButton } from '@rainbow-me/rainbowkit';
+
 
 export const HomePageContent: NextPage = function () {
     return (
@@ -14,7 +16,15 @@ export const HomePageContent: NextPage = function () {
           
         </section>
         <section>
- 
+        <div
+      style={{
+        display: 'flex',
+        justifyContent: 'flex-end',
+        padding: 12,
+      }}
+    >
+      <ConnectButton />
+    </div>
         </section>
       </div>
     </>

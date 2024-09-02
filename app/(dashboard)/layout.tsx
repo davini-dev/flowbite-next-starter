@@ -5,11 +5,14 @@ import type { FC, PropsWithChildren } from "react";
 import { twMerge } from "tailwind-merge";
 import { DashboardNavbar } from "./navbar";
 import { DashboardSidebar } from "./sidebar";
+import { Providers } from './providers';
 
 const LiveLayout: FC<PropsWithChildren> = function ({ children }) {
   return (
     <SidebarProvider>
-      <DashboardLayoutContent>{children}</DashboardLayoutContent>
+      <DashboardLayoutContent>
+        {children}
+      </DashboardLayoutContent>
     </SidebarProvider>
   );
 };
@@ -29,7 +32,7 @@ const DashboardLayoutContent: FC<PropsWithChildren> = function ({ children }) {
             isCollapsed ? "lg:ml-[4.5rem]" : "lg:ml-64",
           )}
         >
-          {children}
+          <Providers>{children}</Providers>
         </div>
       </div>
     </>

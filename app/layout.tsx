@@ -5,6 +5,9 @@ import { twMerge } from "tailwind-merge";
 import "./globals.css";
 import { flowbiteTheme } from "./theme";
 
+import '@rainbow-me/rainbowkit/styles.css';
+import { Providers } from './providers';
+
 const inter = Inter({ subsets: ["latin"] });
 
 const RootLayout: FC<PropsWithChildren> = function ({ children }) {

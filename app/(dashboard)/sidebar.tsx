@@ -10,9 +10,6 @@ import {
 } from "react-icons/hi";
 import { twMerge } from "tailwind-merge";
 
-import { ConnectBtn } from "../../components/connectButton";
-
-
 export const DashboardSidebar: FC = function () {
   const { isCollapsed } = useSidebarContext();
 
@@ -50,8 +47,8 @@ export const DashboardSidebar: FC = function () {
           </Sidebar.Item>
         </Sidebar.ItemGroup>
       </Sidebar.Items>
-      <ConnectBtn />
-      
+
+ 
     </Sidebar>
   );
 };
