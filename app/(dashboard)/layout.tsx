@@ -11,7 +11,7 @@ const LiveLayout: FC<PropsWithChildren> = function ({ children }) {
   return (
     <SidebarProvider>
       <DashboardLayoutContent>
-        {children}
+      <Providers>{children}</Providers>
       </DashboardLayoutContent>
     </SidebarProvider>
   );

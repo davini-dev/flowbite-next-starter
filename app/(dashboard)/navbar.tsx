@@ -19,17 +19,6 @@ import Image from "next/image";
 import type { FC } from "react";
 import { HiMenuAlt1, HiX } from "react-icons/hi";
 
-import { useConnectWallet } from '@web3-onboard/react'
-import injectedModule from '@web3-onboard/injected-wallets'
-import { ethers } from 'ethers'
-
-//import { ConnectButton } from '@rainbow-me/rainbowkit';
-
-
-import { config } from '../wagmi';
-
-
-
 const Ratingv: FC = function () {
   return (
 

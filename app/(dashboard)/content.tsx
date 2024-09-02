@@ -2,9 +2,9 @@ import type { NextPage } from "next";
 import dynamic from 'next/dynamic'
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 
-
 export const HomePageContent: NextPage = function () {
     return (
+      
         <>
       <div className="p-6">
         <section>
@@ -23,7 +23,8 @@ export const HomePageContent: NextPage = function () {
         padding: 12,
       }}
     >
-      <ConnectButton />
+            <ConnectButton />
+            
     </div>
         </section>
       </div>
