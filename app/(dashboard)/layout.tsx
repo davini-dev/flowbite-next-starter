@@ -6,7 +6,7 @@ import { twMerge } from "tailwind-merge";
 import { DashboardNavbar } from "./navbar";
 import { DashboardSidebar } from "./sidebar";
 
-const DashboardLayout: FC<PropsWithChildren> = function ({ children }) {
+const LiveLayout: FC<PropsWithChildren> = function ({ children }) {
   return (
     <SidebarProvider>
       <DashboardLayoutContent>{children}</DashboardLayoutContent>
@@ -36,4 +36,4 @@ const DashboardLayoutContent: FC<PropsWithChildren> = function ({ children }) {
   );
 };
 
-export default DashboardLayout;
+export default LiveLayout;

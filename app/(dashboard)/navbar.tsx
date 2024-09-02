@@ -23,6 +23,12 @@ import { useConnectWallet } from '@web3-onboard/react'
 import injectedModule from '@web3-onboard/injected-wallets'
 import { ethers } from 'ethers'
 
+//import { ConnectButton } from '@rainbow-me/rainbowkit';
+
+
+import { config } from '../wagmi';
+
+
 
 const Ratingv: FC = function () {
   return (
@@ -96,7 +102,7 @@ export const DashboardNavbar: FC<Record<string, never>> = function () {
 
       </div>
               </div>
-            <Button>...</Button>
+           
             
             <Dropdown
           arrowIcon={false}
