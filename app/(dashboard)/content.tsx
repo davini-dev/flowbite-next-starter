@@ -2,12 +2,9 @@ import type { NextPage } from "next";
 import dynamic from 'next/dynamic'
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 
-import { useBalance, useEnsName } from "wagmi";
+import { useAccount, useBalance, useEnsName } from "wagmi";
 
 
-
-//const { isConnecting, address, isConnected, chain } = useAccountx();
-  
 
 export const HomePageContent: NextPage = function () {
     return (
@@ -32,6 +29,7 @@ export const HomePageContent: NextPage = function () {
     >
             <ConnectButton />
             
+            
     </div>
         </section>
       </div>
@@ -39,7 +37,4 @@ export const HomePageContent: NextPage = function () {
     )
 };
 
-function useAccount(): { isConnecting: any; address: any; isConnected: any; chain: any; } {
-  throw new Error("Function not implemented.");
-}
-  
+
