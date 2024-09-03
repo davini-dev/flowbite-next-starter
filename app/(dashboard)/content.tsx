@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import dynamic from 'next/dynamic'
 import { ConnectButton } from '@rainbow-me/rainbowkit';
+//import { ConnectBtn } from '@/components/connectButton';
 
 import { useAccount, useBalance, useEnsName } from "wagmi";
 
@@ -29,7 +30,7 @@ export const HomePageContent: NextPage = function () {
     >
             <ConnectButton />
             
-            
+          
     </div>
         </section>
       </div>
