@@ -13,38 +13,31 @@ import { useMemo } from "react";
 
 export const HomePageContent: NextPage = function () {
 
-  const Map = useMemo(
-    () =>
-      dynamic(() => import("@/components/map"), {
-        loading: () => <p>Lendo mapa...</p>,
-        ssr: false,
-      }),
-    []
-  );
-
   return (
-     <>
-      <div className="bg-white-700 mx-auto my-5 w-[98%] h-[480px]">
-        <Map posix={[-23.462007, -46.556279]} />
-      </div>
-              <section>
-              <div
-            style={{
-              display: 'flex',
-              justifyContent: 'flex-end',
-              padding: 12,
-            }}
-          >
-                  <ConnectButton />
-                  
-                
-          </div>
-              </section>
-    </>
-  );
-};
+      <>
+    <div className="p-6">
+      <section>
 
-function useAccount(): { isConnecting: any; address: any; isConnected: any; chain: any; } {
-  throw new Error("Function not implemented.");
-}
+      </section>
+      <section>
+        
+      <iframe src="./rastrear.html" width='100%' height='470px'></iframe> 
+      </section>
+      <section>
+      <div
+    style={{
+      display: 'flex',
+      justifyContent: 'flex-end',
+      padding: 12,
+    }}
+  >
+          <ConnectButton />
+          
+        
+  </div>
+      </section>
+    </div>
+  </>
+  )
+};
   
