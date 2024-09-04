@@ -46,7 +46,7 @@ const FooterPage: FC = function () {
   return (
 <footer className="bg-white rounded-lg shadow sm:flex sm:items-center sm:justify-between p-4 sm:p-6 xl:p-8 dark:bg-gray-800 antialiased">
   <p className="mb-4 text-sm text-center text-gray-500 dark:text-gray-400 sm:mb-0">
-      &copy; 2021-2024 <a href="https://www.hempsp.com/" className="hover:underline" target="_blank">HempSP.com</a>. All rights reserved.
+      &copy; 2024 <a href="https://www.hempsp.com/" className="hover:underline" target="_blank">HempSP</a>. All rights reserved.
   </p>
   <div className="flex justify-center items-center space-x-1">
     <a href="#" data-tooltip-target="tooltip-facebook" className="inline-flex justify-center p-2 text-gray-500 rounded-lg cursor-pointer dark:text-gray-400 dark:hover:text-white hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-600">
