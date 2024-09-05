@@ -6,6 +6,8 @@ import { LatLngExpression, LatLngTuple } from "leaflet";
 import "leaflet/dist/leaflet.css";
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
 import "leaflet-defaulticon-compatibility";
+import RoutingMachine from "@/components/RoutingMachine";
+import Envia from "@/components/teste";
 
 interface MapProps {
   posix: LatLngExpression | LatLngTuple;
@@ -19,8 +21,12 @@ const defaults = {
 const Map = (Map: MapProps) => {
   const { zoom = defaults.zoom, posix } = Map;
 
+
+
   return (
     <MapContainer
+
+    
       center={posix}
       zoom={zoom}
       scrollWheelZoom={false}
@@ -33,6 +39,7 @@ const Map = (Map: MapProps) => {
       <Marker position={posix} draggable={false}>
         <Popup>Hey ! I study here</Popup>
       </Marker>
+      <Envia currentPos={[28.3949, 84.1240]} />
     </MapContainer>
   );
 };
