@@ -24,10 +24,12 @@ export const HomePageContent: NextPage = function () {
 
   return (
      <>
+      <section>
       <div>
         <Map posix={[-23.462007, -46.556279]} />
       </div>
-              <section>
+      </section>     
+      <section>
               <div
             style={{
               display: 'flex',
@@ -38,7 +40,7 @@ export const HomePageContent: NextPage = function () {
                   <ConnectButton />
           </div>
           <FooterPage />
-              </section>
+      </section>
     </>
   );
 };
