@@ -25,7 +25,7 @@ export const HomePageContent: NextPage = function () {
   return (
      <>
       <section>
-      <div>
+      <div className="leaflet-control">
         <Map posix={[-23.462007, -46.556279]} />
       </div>
       </section>     
