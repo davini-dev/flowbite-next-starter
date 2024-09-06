@@ -24,7 +24,7 @@ export const HomePageContent: NextPage = function () {
 
   return (
      <>
-      <div className="bg-white-700 mx-auto my-5 w-[98%] h-[480px]">
+      <div>
         <Map posix={[-23.462007, -46.556279]} />
       </div>
               <section>
