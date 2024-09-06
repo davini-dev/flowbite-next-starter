@@ -37,6 +37,7 @@ export const HomePageContent: NextPage = function () {
           >
                   <ConnectButton />
           </div>
+          <FooterPage />
               </section>
     </>
   );
