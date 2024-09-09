@@ -3,10 +3,12 @@
 import { useState, useEffect } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
+import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
+import "leaflet-defaulticon-compatibility";
 
 const Map = () => {
   const [position, setPosition] = useState([51.505, -0.09]); // Posição inicial
-  const [speed, setSpeed] = useState(null); // Estado para a velocidade
+  const [speed, setSpeed] = useState(0); // Estado para a velocidade
   const [accuracy, setAccuracy] = useState(null); // Estado para a precisão
 
   useEffect(() => {
@@ -47,12 +49,13 @@ const Map = () => {
   }, []);
 
   return (
-    <MapContainer center={position} zoom={13} style={{ height: "100vh", width: "100%" }}>
+    <MapContainer 
+        zoom={13} style={{ height: "100vh", width: "100%" }}>
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       />
-      <Marker position={position}>
+      <Marker position={[28.3949, 84.1240]}>
         <Popup>
           <div>
             <p><strong>Localização Atual:</strong></p>

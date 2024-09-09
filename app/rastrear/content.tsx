@@ -26,7 +26,7 @@ export const HomePageContent: NextPage = function () {
   return (
      <>
       <section>
-      <div className="leaflet-control">
+      <div id='map' >
         <Map />
       </div>
       </section>     
