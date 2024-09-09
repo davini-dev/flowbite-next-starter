@@ -6,6 +6,7 @@ import { useBalance, useEnsName } from "wagmi";
 import { useMemo } from "react";
 //import Map from "@/components/map";
 
+import '../globals.css'
 
 
 //const { isConnecting, address, isConnected, chain } = useAccountx();
@@ -15,7 +16,7 @@ export const HomePageContent: NextPage = function () {
 
   const Map = useMemo(
     () =>
-      dynamic(() => import("@/components/map"), {
+      dynamic(() => import("@/components/map2"), {
         loading: () => <p>Lendo mapa...</p>,
         ssr: false,
       }),
@@ -26,7 +27,7 @@ export const HomePageContent: NextPage = function () {
      <>
       <section>
       <div className="leaflet-control">
-        <Map posix={[-23.462007, -46.556279]} />
+        <Map />
       </div>
       </section>     
       <section>
@@ -39,7 +40,7 @@ export const HomePageContent: NextPage = function () {
           >
                   <ConnectButton />
           </div>
-          <FooterPage />
+     
       </section>
     </>
   );
