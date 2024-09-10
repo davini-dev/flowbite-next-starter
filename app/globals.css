@@ -119,7 +119,7 @@ a {
         font-family: monospace;
 }
 
-.leaflet-control { z-index: 0 !important}
+.leaflet-control { z-index: -1 }
 
 @tailwind base;
 @tailwind components;

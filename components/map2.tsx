@@ -3,6 +3,8 @@
 import { useState, useEffect } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
+import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
+import "leaflet-defaulticon-compatibility";
 
 // Tipos para os estados de posição e velocidade
 interface Coords {
@@ -13,7 +15,7 @@ interface Coords {
 }
 
 const Map = () => {
-  const [position, setPosition] = useState<[number, number]>([51.505, -0.09]); // Estado para posição inicial
+  const [position, setPosition] = useState<[number, number]>([-23.46207, -46.556279]); // Estado para posição inicial
   const [speed, setSpeed] = useState<number | null>(null); // Estado para velocidade
   const [accuracy, setAccuracy] = useState<number | null>(null); // Estado para precisão
 
@@ -66,8 +68,8 @@ const Map = () => {
             <p><strong>Localização Atual:</strong></p>
             <p>Latitude: {position[0]}</p>
             <p>Longitude: {position[1]}</p>
-            <p>Velocidade: (speed * 3.6).toFixed(2) ' km/h : "Não disponível"</p>
-            <p>Precisão: {accuracy} metros : "Não disponível"</p>
+            <p>Velocidade: ({speed} * 3.6).toFixed(2) km/h</p>
+            <p>Precisão: {accuracy} metros"</p>
           </div>
         </Popup>
       </Marker>
