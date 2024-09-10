@@ -1,28 +1,34 @@
-"use client";
+"use client"; // Garante que o componente seja renderizado no lado do cliente
 
 import { useState, useEffect } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
-import "leaflet-defaulticon-compatibility";
+
+// Tipos para os estados de posição e velocidade
+interface Coords {
+  latitude: number;
+  longitude: number;
+  speed: number | null;
+  accuracy: number | null;
+}
 
 const Map = () => {
-  const [position, setPosition] = useState([51.505, -0.09]); // Posição inicial
-  const [speed, setSpeed] = useState(0); // Estado para a velocidade
-  const [accuracy, setAccuracy] = useState(null); // Estado para a precisão
+  const [position, setPosition] = useState<[number, number]>([51.505, -0.09]); // Estado para posição inicial
+  const [speed, setSpeed] = useState<number | null>(null); // Estado para velocidade
+  const [accuracy, setAccuracy] = useState<number | null>(null); // Estado para precisão
 
   useEffect(() => {
-    let watchId;
+    let watchId: number;
 
     // Função para atualizar a localização e velocidade
     const updatePosition = () => {
       if ("geolocation" in navigator) {
-        watchId = navigator.geolocation.getCurrentPosition(
+        navigator.geolocation.getCurrentPosition(
           (position) => {
             const { latitude, longitude, speed, accuracy } = position.coords;
             setPosition([latitude, longitude]);
-            setSpeed(speed); // Define a velocidade
-            setAccuracy(accuracy); // Define a precisão
+            setSpeed(speed);
+            setAccuracy(accuracy);
           },
           (error) => {
             console.error(error);
@@ -49,20 +55,19 @@ const Map = () => {
   }, []);
 
   return (
-    <MapContainer 
-        zoom={13} style={{ height: "100vh", width: "100%" }}>
+    <MapContainer center={position} zoom={13} style={{ height: "100vh", width: "100%" }}>
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       />
-      <Marker position={[28.3949, 84.1240]}>
+      <Marker position={position}>
         <Popup>
           <div>
             <p><strong>Localização Atual:</strong></p>
             <p>Latitude: {position[0]}</p>
             <p>Longitude: {position[1]}</p>
-            <p>Velocidade: {speed} * 3.6).toFixed(2): "Não disponível"</p>
-            <p>Precisão:   {accuracy} metros : "Não disponível"</p>
+            <p>Velocidade: (speed * 3.6).toFixed(2) ' km/h : "Não disponível"</p>
+            <p>Precisão: {accuracy} metros : "Não disponível"</p>
           </div>
         </Popup>
       </Marker>
