@@ -26,7 +26,7 @@ export const HomePageContent: NextPage = function () {
   return (
      <>
       <section>
-      <div className="z-[10]" >
+      <div>
         <Map />
       </div>
       </section>     
